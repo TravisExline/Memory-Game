@@ -43,6 +43,3 @@ body {
     border-radius: 5px;
 }
 
-.playing-card:click .card-front {
-    transform: rotateY(180deg)
-}
