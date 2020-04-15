@@ -13,14 +13,26 @@ function flipCard() {
         return
     }
 
+    cardTwo = this
+
     isMatch()
 }
 
 function isMatch() {
-    debugger
+    // debugger
     if(cardOne.id === cardTwo.id) {
-        correctCards()
+        correctMatch()
     }
+
+    incorrectMatch()
+}
+
+function correctMatch() {
+
+}
+
+function incorrectMatch() {
+
 }
 
 playingCards.forEach(card => card.addEventListener('click', flipCard))
