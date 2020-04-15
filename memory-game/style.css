@@ -16,6 +16,7 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    perspective: 1000px;
 }
 
 .playing-card {
@@ -25,12 +26,18 @@ body {
     position: relative;
     box-shadow: 2px 2px 2px rgba(0,0,0,.3);
     transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
 }
 
 /* performs and onclick effect */
 .playing-card:active { 
     transform: scale(.95);
     transition: transform .1s;
+}
+
+.playing-card.flip {
+    transform: rotateY(180deg);
 }
 
 .card-back {
@@ -40,6 +47,7 @@ body {
     position: absolute;
     border-radius: 5px;
     background: cornflowerblue;
+    backface-visibility: hidden;
 }
 
 .card-front {
@@ -48,5 +56,6 @@ body {
     padding: 20px;
     position: absolute;
     border-radius: 5px;
+    transform: rotateY(180deg);
 }
 
