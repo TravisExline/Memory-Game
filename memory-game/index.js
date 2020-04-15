@@ -22,17 +22,21 @@ function isMatch() {
     // debugger
     if(cardOne.id === cardTwo.id) {
         correctMatch()
+        return
     }
 
     incorrectMatch()
 }
 
 function correctMatch() {
-
+    alert("Correct Match!") 
 }
 
 function incorrectMatch() {
-
+    setTimeout(() => {
+        cardOne.classList.remove('flip');
+        cardTwo.classList.remove('flip')
+    }, 2000)
 }
 
 playingCards.forEach(card => card.addEventListener('click', flipCard))
