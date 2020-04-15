@@ -14,6 +14,8 @@ function flipCard() {
     }
 
     cardTwo = this
+    // must reset the flipped card; or else matches all cards with cardOne
+    hasFlipped = false
 
     isMatch()
 }
