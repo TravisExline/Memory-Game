@@ -18,8 +18,3 @@ function showFronts() {
     cardFront.style.display = ""
 }
 
-playingCard.addEventListener('click', function(e) {
-    e.preventDefault()
-    hideBacks()
-    showFronts()
-})
