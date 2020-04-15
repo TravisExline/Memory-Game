@@ -10,6 +10,14 @@ function flipCard() {
         hasFlipped = true;
         cardOne = this
     }
+
+    isMatch()
+}
+
+function isMatch() {
+    if(cardOne.id === cardTwo.id) {
+        correctCards()
+    }
 }
 
 playingCards.forEach(card => card.addEventListener('click', flipCard))
