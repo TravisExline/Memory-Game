@@ -13,10 +13,13 @@ function flipCard() {
         return
     }
 
+    // eliminates ability to select the same card twice
     if(this != cardOne) {
         cardTwo = this
+    } else {
+        return
     }
-    debugger
+
     // must reset the flipped card; or else matches all cards with cardOne
     hasFlipped = false
 
