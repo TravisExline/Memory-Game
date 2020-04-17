@@ -28,6 +28,7 @@ function isMatch() {
         return
     }
 
+    stopFlip(event)
     incorrectMatch()
 }
 
@@ -35,14 +36,19 @@ function correctMatch() {
     setTimeout(() => {
         alert("Correct Match!")
     }, 500)
-     
+}
+
+function stopFlip(event) {
+    document.getElementById("card-front-image").addEventListener('click', function(e){
+        e.preventDefault()
+    })
 }
 
 function incorrectMatch() {
     setTimeout(() => {
         cardOne.classList.remove('flip');
         cardTwo.classList.remove('flip')
-    }, 2000)
+    }, 1500)
 }
 
 playingCards.forEach(card => card.addEventListener('click', flipCard))
