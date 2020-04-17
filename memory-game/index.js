@@ -13,7 +13,10 @@ function flipCard() {
         return
     }
 
-    cardTwo = this
+    if(this != cardOne) {
+        cardTwo = this
+    }
+    debugger
     // must reset the flipped card; or else matches all cards with cardOne
     hasFlipped = false
 
@@ -28,7 +31,7 @@ function isMatch() {
         return
     }
 
-    stopFlip(event)
+    // stopFlip(event)
     incorrectMatch()
 }
 
@@ -38,11 +41,11 @@ function correctMatch() {
     }, 500)
 }
 
-function stopFlip(event) {
-    document.getElementById("card-front-image").addEventListener('click', function(e){
-        e.preventDefault()
-    })
-}
+// function stopFlip(event) {
+    // document.getElementById("card-front-image").addEventListener('click', function(e){
+    //     e.preventDefault()
+    // })
+// }
 
 function incorrectMatch() {
     setTimeout(() => {
