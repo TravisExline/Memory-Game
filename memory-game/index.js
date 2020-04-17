@@ -5,9 +5,12 @@ let cardOne, cardTwo
 
 var moves = 0
 
+document.addEventListener("load", shuffleCards())
+
 function shuffleCards() {
     playingCards.forEach(card => {
-        
+        let cardPosition = Math.floor(Math.random() * 12)
+        card.style.order = cardPosition
     })
 }
 
