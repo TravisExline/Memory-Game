@@ -3,6 +3,8 @@ const playingCards = document.querySelectorAll('.playing-card')
 let hasFlipped = false
 let cardOne, cardTwo
 
+var moves = 0
+
 function flipCard() {
     this.classList.add('flip');
 
@@ -42,6 +44,7 @@ function correctMatch() {
     setTimeout(() => {
         alert("Correct Match!")
     }, 500)
+    moveCounter()
 }
 
 // function stopFlip(event) {
@@ -55,6 +58,12 @@ function incorrectMatch() {
         cardOne.classList.remove('flip');
         cardTwo.classList.remove('flip')
     }, 1500)
+    moveCounter()
+}
+
+function moveCounter() {
+    moves += 1
+    document.getElementById('move-counter').innerHTML = `Total Moves: ${moves}`
 }
 
 playingCards.forEach(card => card.addEventListener('click', flipCard))
