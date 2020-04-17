@@ -20,6 +20,7 @@ function flipCard() {
     isMatch()
 }
 
+
 function isMatch() {
     // debugger
     if(cardOne.id === cardTwo.id) {
@@ -31,7 +32,10 @@ function isMatch() {
 }
 
 function correctMatch() {
-    alert("Correct Match!") 
+    setTimeout(() => {
+        alert("Correct Match!")
+    }, 500)
+     
 }
 
 function incorrectMatch() {
