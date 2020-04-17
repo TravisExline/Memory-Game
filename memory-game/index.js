@@ -5,6 +5,12 @@ let cardOne, cardTwo
 
 var moves = 0
 
+function shuffleCards() {
+    playingCards.forEach(card => {
+        
+    })
+}
+
 function flipCard() {
     this.classList.add('flip');
 
