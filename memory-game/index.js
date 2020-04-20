@@ -43,10 +43,10 @@ function isMatch() {
     // debugger
     if(cardOne.id === cardTwo.id) {
         correctMatch()
-        totalCorrect += 1
-        if(totalCorrect === 6) {
-            youWin()
-        }
+        // totalCorrect += 1
+        // if(totalCorrect === 6) {
+        //     youWin()
+        // }
         return
     }
 
@@ -58,6 +58,12 @@ function correctMatch() {
     setTimeout(() => {
         alert("Correct Match!")
     }, 500)
+    totalCorrect += 1
+    if(totalCorrect === 6) {
+        setTimeout(() => {
+            youWin()
+        }, 1000)
+    }
     moveCounter()
 }
 
