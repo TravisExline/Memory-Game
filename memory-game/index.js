@@ -2,6 +2,7 @@ const playingCards = document.querySelectorAll('.playing-card')
 
 let hasFlipped = false
 let cardOne, cardTwo
+let totalCorrect = 0
 
 var moves = 0
 
@@ -42,6 +43,10 @@ function isMatch() {
     // debugger
     if(cardOne.id === cardTwo.id) {
         correctMatch()
+        totalCorrect += 1
+        if(totalCorrect === 6) {
+            youWin()
+        }
         return
     }
 
@@ -68,6 +73,10 @@ function incorrectMatch() {
         cardTwo.classList.remove('flip')
     }, 1500)
     moveCounter()
+}
+
+function youWin() {
+    alert('You Win! Yay!')
 }
 
 function moveCounter() {
