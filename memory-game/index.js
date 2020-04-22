@@ -36,10 +36,11 @@ function flipCard() {
     // must reset the flipped card; or else matches all cards with cardOne
     hasFlipped = false
 
+    // stopFlip()
     isMatch()
 }
 
-// where do we put this to make it work????
+// where do we put this to make it work???? alter the method to not include cardOne or cardTwo
 // stopFlip()
 
 function isMatch() {
@@ -69,7 +70,13 @@ function correctMatch() {
 
 function stopFlip() {
     // debugger
-    playingCards.forEach(card => card.classList.remove('flip'))
+    // playingCards.forEach(card => card.classList.remove('flip'))
+    // for(i = 0; i < playingCards.length; i++) {
+    //     if(playingCards[i] != cardOne && playingCards[i] != cardTwo) {
+    //         debugger
+    //         playingCards[i].classList.remove('flip')
+    //     }
+    // }
 }
 
 function incorrectMatch() {
