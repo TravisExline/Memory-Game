@@ -47,7 +47,7 @@ function isMatch() {
         return
     }
 
-    // stopFlip(event)
+    stopFlip()
     incorrectMatch()
 }
 
@@ -67,11 +67,10 @@ function correctMatch() {
     moveCounter()
 }
 
-// function stopFlip(event) {
-    // document.getElementById("card-front-image").addEventListener('click', function(e){
-    //     e.preventDefault()
-    // })
-// }
+function stopFlip() {
+    // debugger
+    playingCards.forEach(card => card.classList.remove('flip'))
+}
 
 function incorrectMatch() {
     setTimeout(() => {
