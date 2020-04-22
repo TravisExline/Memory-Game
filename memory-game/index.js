@@ -1,4 +1,5 @@
 const playingCards = document.querySelectorAll('.playing-card')
+const correctMatchText = document.getElementById('correct-answer')
 
 let hasFlipped = false
 let cardOne, cardTwo
@@ -43,10 +44,6 @@ function isMatch() {
     // debugger
     if(cardOne.id === cardTwo.id) {
         correctMatch()
-        // totalCorrect += 1
-        // if(totalCorrect === 6) {
-        //     youWin()
-        // }
         return
     }
 
@@ -56,8 +53,11 @@ function isMatch() {
 
 function correctMatch() {
     setTimeout(() => {
-        alert("Correct Match!")
+        correctMatchText.innerHTML = "Correct Match!"
     }, 500)
+    setTimeout(() => {
+        correctMatchText.innerHTML = " "
+    }, 1500)
     totalCorrect += 1
     if(totalCorrect === 6) {
         setTimeout(() => {

@@ -10,6 +10,14 @@ body {
     background: rgba(93, 93, 226, 0.671);
 }
 
+#correct-answer {
+    width: 525px;
+    font-size: 35px;
+    font-style: italic;
+    padding-left: 170px;
+    padding-bottom: 25px;
+}
+
 .cards-section {
     width: 640px;
     height: 640px;
