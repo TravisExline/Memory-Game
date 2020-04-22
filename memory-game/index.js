@@ -39,6 +39,8 @@ function flipCard() {
     isMatch()
 }
 
+// where do we put this to make it work????
+// stopFlip()
 
 function isMatch() {
     // debugger
@@ -46,8 +48,6 @@ function isMatch() {
         correctMatch()
         return
     }
-
-    stopFlip()
     incorrectMatch()
 }
 
