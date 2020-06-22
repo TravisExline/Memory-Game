@@ -69,12 +69,14 @@ body {
 
 .move-counter {
     width: 250px;
-    height: 350px;
+    height: 300px;
     margin-top: 125px;
     margin-left: 125px;
     padding: 50px;
     color: cornflowerblue;
-    background-color: lightblue;
+    background-color: rgb(155, 186, 243);
+    opacity: .7;
+    border-radius: 7px;
     text-shadow: 2px 2px darkblue;
 }
 
@@ -82,3 +84,6 @@ body {
     font-size: 50px;
 }
 
+#total-moves {
+    font-size: 50px;
+}
