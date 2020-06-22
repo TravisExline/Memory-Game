@@ -55,9 +55,12 @@ function isMatch() {
 function correctMatch() {
     setTimeout(() => {
         correctMatchText.innerHTML = "Correct Match!"
+        correctMatchText.style.backgroundColor = "rgb(155, 186, 243)"
+        correctMatchText.style.opacity = ".7"
     }, 500)
     setTimeout(() => {
         correctMatchText.innerHTML = " "
+        correctMatchText.style.opacity = "0"
     }, 1500)
     totalCorrect += 1
     if(totalCorrect === 6) {
