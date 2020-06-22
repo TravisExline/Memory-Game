@@ -15,7 +15,7 @@ body {
     font-size: 35px;
     font-style: italic;
     padding-left: 170px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
 
 .cards-section {
@@ -72,7 +72,7 @@ body {
     height: 300px;
     margin-top: 125px;
     margin-left: 125px;
-    padding: 50px;
+    padding: 30px;
     color: cornflowerblue;
     background-color: rgb(155, 186, 243);
     opacity: .7;
