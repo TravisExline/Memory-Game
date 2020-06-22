@@ -67,14 +67,18 @@ body {
     transform: rotateY(180deg);
 }
 
-#move-counter {
-    width: 95px;
-    height: 95px;
+.move-counter {
+    width: 250px;
+    height: 350px;
     margin-top: 125px;
     margin-left: 125px;
     padding: 50px;
-    font-size: 62px;
     color: cornflowerblue;
+    background-color: lightblue;
     text-shadow: 2px 2px darkblue;
+}
+
+.total-moves-header {
+    font-size: 50px;
 }
 

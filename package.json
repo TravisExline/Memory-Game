@@ -1,0 +1,19 @@
+{
+  "name": "memory-game",
+  "version": "1.0.0",
+  "description": "memory game test ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TravisExline/Memory-Game.git"
+  },
+  "author": "TravisE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TravisExline/Memory-Game/issues"
+  },
+  "homepage": "https://github.com/TravisExline/Memory-Game#readme"
+}

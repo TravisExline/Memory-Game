@@ -93,7 +93,7 @@ function youWin() {
 
 function moveCounter() {
     moves += 1
-    document.getElementById('move-counter').innerHTML = `Total Moves: ${moves}`
+    document.getElementById('total-moves').innerHTML = `${moves}`
 }
 
 playingCards.forEach(card => card.addEventListener('click', flipCard))
