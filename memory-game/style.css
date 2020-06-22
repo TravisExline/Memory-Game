@@ -17,7 +17,8 @@ body {
     padding-left: 170px;
     padding-bottom: 10px;
     border-radius: 5px;
-    opacity: .7;
+    text-shadow: 2px 2px darkblue;
+    color: cornflowerblue;
 }
 
 .cards-section {
@@ -82,10 +83,6 @@ body {
     text-shadow: 2px 2px darkblue;
 }
 
-.total-moves-header {
-    font-size: 50px;
-}
-
-#total-moves {
+.total-moves-header, #total-moves {
     font-size: 50px;
 }
